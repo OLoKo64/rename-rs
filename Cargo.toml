@@ -1,6 +1,6 @@
 [package]
 name = "rename-rs"
-version = "0.1.100"
+version = "0.1.110"
 edition = "2021"
 
 [profile.release]

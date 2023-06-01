@@ -20,7 +20,7 @@ pub struct AppArguments {
     pub dirs_only: bool,
 
     /// The replacement starting range to use
-    #[arg(short, long, default_value_t = 1)]
+    #[arg(short = 'i', long, default_value_t = 1)]
     pub start_index: usize,
 
     /// The replacement file name
@@ -30,4 +30,8 @@ pub struct AppArguments {
     /// Bypass the confirmation prompt and rename all entries
     #[arg(short, long)]
     pub yes: bool,
+
+    /// Index separator
+    #[arg(short, long, default_value = "-")]
+    pub separator: String,
 }

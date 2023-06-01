@@ -53,7 +53,7 @@ fn new_name(args: &AppArguments, file: &std::path::Path, replacement: usize) -> 
     };
     let file_path = file.parent().unwrap();
     format!(
-        "{}-{}{}",
+        "{}{}{}{}",
         file_path
             .join(
                 args.replacement
@@ -62,6 +62,7 @@ fn new_name(args: &AppArguments, file: &std::path::Path, replacement: usize) -> 
             )
             .to_str()
             .unwrap(),
+        args.separator,
         replacement,
         extension
     )
