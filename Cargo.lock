@@ -216,8 +216,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "rename-rs"
-version = "0.1.110"
+name = "rename64"
+version = "0.1.120"
 dependencies = [
  "clap",
  "glob",
